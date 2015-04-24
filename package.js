@@ -13,6 +13,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
   api.addFiles('rand-token.js');
+  api.export('RandToken', 'server');
 });
 
 Package.onTest(function(api) {
@@ -20,3 +21,5 @@ Package.onTest(function(api) {
   api.use('nyablonskiy:rand-token');
   api.addFiles('rand-token-tests.js');
 });
+
+Npm.depends({ 'rand-token': '0.2.1' });
