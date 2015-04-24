@@ -13,7 +13,7 @@ meteor add nyablonskiy:rand-token
 var token = RandToken.generate(16);
 
 // Use it as a replacement for uid:
-var uid = require('rand-token').uid;
+var uid = RandToken.uid;
 var token = uid(16);
 
 // Generate mostly sequential tokens:
