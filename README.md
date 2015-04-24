@@ -2,12 +2,12 @@
 Generate random tokens from your choice of randomness.
 https://www.npmjs.com/package/rand-token
 
-##Instalation
+## Instalation
 ```
 meteor add nyablonskiy:rand-token
 ```
 
-##Usage
+## Usage
 ```
 // Generate a 16 character alpha-numeric token:
 var token = RandToken.generate(16);
